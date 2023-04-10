@@ -1,11 +1,21 @@
 pipeline {
     agent any
+    
+    environment{
+    PATH = "/opt/apache-maven/bin:$PATH"
 
     stages {
-        stage('Hello') {
+        stage('git checkout) {
             steps {
                 echo 'Hello World'
             }
         }
+    stages {
+        stage('Maven build') {
+            steps {
+                sh "mvn clean package"
+            }
+        }
+    
     }
 }
