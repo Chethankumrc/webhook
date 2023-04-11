@@ -1,4 +1,10 @@
-
-
-
+pipelin{
+agent any
+stages{
+stage{
+steps{
 echo "My name is chethan"
+}
+}
+}
+}
