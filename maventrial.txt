@@ -1,7 +1,7 @@
 pipelin{
 agent any
 stages{
-stage{
+stage("git"){
 steps{
 echo "My name is chethan"
 }
