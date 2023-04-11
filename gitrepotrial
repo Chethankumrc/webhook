@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('git checkout') {
             steps {
-                git url: 'https://github.com/Chethankumrc/webhook.git'
+                git 'https://github.com/jleetutorial/maven-project.git'
             }
         }
     
